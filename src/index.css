@@ -378,6 +378,19 @@ h2 {
 }
 .star-btn:hover { transform: scale(1.2); }
 
+.hero-container {
+  position: relative;
+  height: 420px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 0px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+}
+
 /* ── Desktop (≥768px) ── */
 @media (min-width: 768px) {
   body { background-color: #e8e4de; }
