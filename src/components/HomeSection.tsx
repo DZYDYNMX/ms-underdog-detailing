@@ -27,46 +27,44 @@ export const HomeSection: React.FC = () => {
       initial="hidden"
       animate="visible"
     >
-      {/* Brand Hero Welcome */}
+      {/* Brand Hero Welcome - Full Bleed Overlay */}
       <motion.div 
         variants={itemVariants} 
-        style={{
-          textAlign: 'center',
-          padding: '20px 0 10px 0',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '12px'
-        }}
+        className="hero-container"
       >
-        <h1 style={{ margin: '4px 0', fontSize: '32px', fontWeight: 900, color: 'var(--text-primary)' }}>
-          Top Rated Mobile Car Detailing Near You
-        </h1>
+        <img 
+          src="/hero.webp" 
+          alt="Freshly detailed luxury sedan" 
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          fetchPriority="high"
+          loading="eager"
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(13,27,42,0.4) 0%, rgba(13,27,42,0.8) 50%, rgba(13,27,42,0.98) 100%)', zIndex: 1 }} />
         
-        <div style={{ width: '100%', maxWidth: '600px', borderRadius: '16px', overflow: 'hidden', margin: '8px 0', boxShadow: 'var(--shadow-premium)' }}>
-          <img src="/hero.webp" alt="Freshly detailed luxury sedan" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+        <div style={{ position: 'relative', zIndex: 2, width: '100%', textAlign: 'center', padding: '0 20px 32px 20px' }}>
+          <h1 style={{ fontSize: '36px', fontWeight: 800, color: '#ffffff', margin: '0 0 12px 0', lineHeight: 1.1, textTransform: 'uppercase' }}>
+            Top Rated Mobile<br />Car Detailing Near You
+          </h1>
+          <p style={{
+            fontStyle: 'italic',
+            color: 'rgba(255,255,255,0.9)',
+            fontSize: '18px',
+            margin: '0 0 8px 0',
+            fontWeight: 500
+          }}>
+            "A man's hard work with a woman's touch"
+          </p>
+          <p style={{
+            color: 'var(--accent-red)',
+            fontSize: '15px',
+            fontWeight: 700,
+            margin: 0,
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em'
+          }}>
+            Always remember we come straight to you!
+          </p>
         </div>
-
-        <p style={{
-          fontStyle: 'italic',
-          color: 'var(--text-secondary)',
-          fontSize: '14px',
-          margin: 0,
-          fontWeight: 500
-        }}>
-          "A man's hard work with a woman's touch"
-        </p>
-        <p style={{
-          color: 'var(--accent-red)',
-          fontSize: '14px',
-          fontWeight: 700,
-          marginTop: '2px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px'
-        }}>
-          Always remember we come straight to you!
-        </p>
       </motion.div>
 
       {/* Main Continuous Vertical Layout */}
@@ -156,19 +154,6 @@ export const HomeSection: React.FC = () => {
         {/* Right Column: Details, Hours & Location */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           
-          {/* Business Hours */}
-          <motion.div variants={itemVariants} className="service-card" style={{ maxWidth: '640px', width: '100%', margin: '0 auto' }}>
-            <div style={{ marginBottom: '14px' }}>
-              <h3 style={{ fontSize: '16px', color: 'var(--text-primary)', margin: 0 }}>Operational Hours</h3>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border-color)', paddingBottom: '6px' }}>
-                <span style={{ color: 'var(--text-secondary)', fontWeight: 500, fontSize: '12.5px' }}>Mon - Sun</span>
-                <span style={{ color: 'var(--text-primary)', fontWeight: 600, fontSize: '12.5px' }}>09:00 AM - 03:00 PM</span>
-              </div>
-            </div>
-          </motion.div>
-
           {/* Location Area */}
           <motion.div variants={itemVariants} className="service-card" style={{ padding: '0', overflow: 'hidden' }}>
             <div style={{ padding: '16px 20px 12px 20px' }}>
@@ -188,6 +173,19 @@ export const HomeSection: React.FC = () => {
               <p style={{ color: 'var(--text-secondary)', fontSize: '12.5px', marginBottom: '0', lineHeight: '1.5' }}>
                 Based out of <strong>Avalon at Foxhall (Washington, DC 20016)</strong>. Ronnie provides fully equipped mobile detailing services to driveways and office lots throughout D.C., Arlington, and Bethesda.
               </p>
+            </div>
+          </motion.div>
+
+          {/* Business Hours */}
+          <motion.div variants={itemVariants} className="service-card" style={{ maxWidth: '640px', width: '100%', margin: '0 auto' }}>
+            <div style={{ marginBottom: '14px' }}>
+              <h3 style={{ fontSize: '16px', color: 'var(--text-primary)', margin: 0 }}>Operational Hours</h3>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border-color)', paddingBottom: '6px' }}>
+                <span style={{ color: 'var(--text-secondary)', fontWeight: 500, fontSize: '12.5px' }}>Mon - Sun</span>
+                <span style={{ color: 'var(--text-primary)', fontWeight: 600, fontSize: '12.5px' }}>09:00 AM - 03:00 PM</span>
+              </div>
             </div>
           </motion.div>
 
