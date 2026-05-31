@@ -237,6 +237,25 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   />
                 </div>
 
+                {/* Preparatory Check Banner */}
+                <div
+                  style={{
+                    background: 'rgba(212, 43, 43, 0.05)',
+                    border: '1.5px dashed var(--accent-red)',
+                    borderRadius: 'var(--border-radius-md)',
+                    padding: '14px 16px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '6px',
+                    marginTop: '8px',
+                    marginBottom: '8px'
+                  }}
+                >
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '11px', lineHeight: '1.5', margin: 0 }}>
+                    <strong style={{ color: 'var(--accent-red)' }}>Preparatory Check:</strong> Kindly empty your compartments and remove child car seats/belongings before Ronnie's arrival to guarantee a thorough deep-clean.
+                  </p>
+                </div>
+
                 {/* Trust badge */}
                 <div style={{
                   display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
