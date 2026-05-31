@@ -108,34 +108,24 @@ export const HomeSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Winterization Alert Banner */}
+          {/* SEO Rich Description Section */}
           <motion.div
             variants={itemVariants}
-            style={{
-              background: 'rgba(212, 43, 43, 0.05)',
-              border: '1.5px dashed var(--accent-red)',
-              borderRadius: 'var(--border-radius-md)',
-              padding: '16px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '8px'
-            }}
+            className="service-card"
+            style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{
-                background: 'var(--accent-red)',
-                color: '#fff',
-                fontSize: '9px',
-                fontWeight: 800,
-                padding: '2px 6px',
-                borderRadius: '4px',
-                textTransform: 'uppercase'
-              }}>Seasonal Notice</span>
-              <h4 style={{ color: 'var(--text-primary)', fontSize: '14px', margin: 0, fontWeight: 700 }}>Pre-Winter Paint Protection</h4>
+            <h2 style={{ fontSize: '22px', color: 'var(--text-primary)', margin: 0, fontWeight: 800 }}>Premium Mobile Car Detailing in the DMV Area</h2>
+            <div style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: '1.7', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <p style={{ margin: 0 }}>
+                Ms. Underdog Detailing is Washington D.C.'s premier mobile auto detailing service, bringing top-tier car care directly to your driveway, office, or apartment complex. Serving the entire DMV area—including Maryland and Northern Virginia—we specialize in restoring your vehicle to showroom condition without you ever having to leave your home.
+              </p>
+              <p style={{ margin: 0 }}>
+                Our professional detailing packages go far beyond a standard car wash. We offer meticulous interior deep cleaning, pet hair removal, odor elimination, and leather conditioning to rejuvenate your cabin. On the exterior, our services include advanced clay bar treatments, orbital waxing, paint correction, and long-lasting ceramic coatings that protect your clear coat from harsh East Coast weather, road salt, and UV damage.
+              </p>
+              <p style={{ margin: 0 }}>
+                Whether you drive a daily commuter, a luxury sedan, or a heavy-duty truck, our fully-equipped mobile detailing vans carry our own spot-free water and spot-free power supply. Skip the long lines at the local wash and let Ms. Underdog Detailing deliver a meticulous, swirl-free, and high-gloss finish right at your doorstep. Book your exterior wash or interior detail today and experience the ultimate convenience in mobile car care.
+              </p>
             </div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '12px', lineHeight: '1.6', margin: 0 }}>
-              Don't let Washington's winter road salt corrode your clear coat and wheel arches. Schedule our orbital waxing and polymer paint sealant early to lock in winter protection. Call Ronnie at <a href="tel:2022469291" style={{ color: 'var(--accent-red)', fontWeight: 700, textDecoration: 'none' }}>(202) 246-9291</a> to reserve your slot.
-            </p>
           </motion.div>
 
           {/* Meet Ronnie Section */}
@@ -167,7 +157,7 @@ export const HomeSection: React.FC = () => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           
           {/* Business Hours */}
-          <motion.div variants={itemVariants} className="service-card">
+          <motion.div variants={itemVariants} className="service-card" style={{ maxWidth: '640px', width: '100%', margin: '0 auto' }}>
             <div style={{ marginBottom: '14px' }}>
               <h3 style={{ fontSize: '16px', color: 'var(--text-primary)', margin: 0 }}>Operational Hours</h3>
             </div>
