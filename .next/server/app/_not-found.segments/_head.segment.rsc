@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[30852,["/_next/static/chunks/0onzxbg9a3eck.js","/_next/static/chunks/11c~6fqarxaht.js","/_next/static/chunks/0meq1zgk803md.js"],"ViewportBoundary"]
+3:I[30852,["/_next/static/chunks/0onzxbg9a3eck.js","/_next/static/chunks/11c~6fqarxaht.js","/_next/static/chunks/0meq1zgk803md.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Ms. Underdog Detailing"}],["$","meta","1",{"name":"description","content":"Premium mobile car detailing in the DMV area. We bring top-tier auto upholstery cleaning, interior deep cleans, clay bar treatments, and ceramic coatings right to your driveway."}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"bAVkyx5eVcaQS8pKcBX2f"}

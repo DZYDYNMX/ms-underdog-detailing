@@ -1,0 +1,13 @@
+var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__09pvg0y._.js")
+R.c("server/chunks/ssr/0rjk_next_dist_esm_build_templates_app-page_11yv~nj.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0k6lyn8._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__10c60gg._.js")
+R.c("server/chunks/ssr/_gemini_antigravity_scratch_ms-underdog-detailing_src_app_0umzf9k._.js")
+R.c("server/chunks/ssr/0rjk_next_dist_client_components_0utm_h6._.js")
+R.c("server/chunks/ssr/0rjk_next_dist_client_components_builtin_forbidden_0xf057-.js")
+R.c("server/chunks/ssr/0rjk_next_dist_client_components_builtin_unauthorized_0w5t1~2.js")
+R.c("server/chunks/ssr/0rjk_next_dist_client_components_builtin_global-error_0pevh1k.js")
+R.c("server/chunks/ssr/05n5_scratch_ms-underdog-detailing__next-internal_server_app_page_actions_0bw3p.x.js")
+R.m(23190)
+module.exports=R.m(23190).exports
