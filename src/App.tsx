@@ -41,7 +41,7 @@ function App() {
     return () => window.removeEventListener('open-legal-sheet', handleOpenLegal);
   }, []);
 
-  // Drawer detail booking click — maps service ID to calculator package
+  // Drawer detail booking click - maps service ID to calculator package
   const handleDetailBooking = (serviceId: string) => {
     setSelectedServiceId(null); // Close sheet
     

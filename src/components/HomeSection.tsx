@@ -86,7 +86,7 @@ export const HomeSection: React.FC = () => {
           >
             <h3 style={{ fontSize: '17px', color: 'var(--text-primary)', fontWeight: 700 }}>Ready to restore your vehicle?</h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '13px', margin: 0 }}>
-              Get an instant estimate based on your vehicle size, pick your add-ons, and send Ronnie your booking request — all in one step. We specialize in mobile car detailing, interior deep cleans, and ceramic coatings.
+              Get an instant estimate based on your vehicle size, pick your add-ons, and send Ronnie your booking request - all in one step. We specialize in mobile car detailing, interior deep cleans, and ceramic coatings.
             </p>
             <div style={{ display: 'flex', gap: '12px', width: '100%', marginTop: '4px' }}>
               <Link
@@ -115,7 +115,7 @@ export const HomeSection: React.FC = () => {
             <h2 style={{ fontSize: '22px', color: 'var(--text-primary)', margin: 0, fontWeight: 800 }}>Premium Mobile Car Detailing in the DMV Area</h2>
             <div style={{ color: 'var(--text-secondary)', fontSize: '15px', lineHeight: '1.7', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <p style={{ margin: 0 }}>
-                Ms. Underdog Detailing is Washington D.C.'s premier mobile auto detailing service, bringing top-tier car care directly to your driveway, office, or apartment complex. Serving the entire DMV area—including Maryland and Northern Virginia—we specialize in restoring your vehicle to showroom condition without you ever having to leave your home.
+                Ms. Underdog Detailing is Washington D.C.'s premier mobile auto detailing service, bringing top-tier car care directly to your driveway, office, or apartment complex. Serving the entire DMV area-including Maryland and Northern Virginia-we specialize in restoring your vehicle to showroom condition without you ever having to leave your home.
               </p>
               <p style={{ margin: 0 }}>
                 Our professional detailing packages go far beyond a standard car wash. We offer meticulous interior deep cleaning, pet hair removal, odor elimination, and leather conditioning to rejuvenate your cabin. On the exterior, our services include advanced clay bar treatments, orbital waxing, paint correction, and long-lasting ceramic coatings that protect your clear coat from harsh East Coast weather, road salt, and UV damage.

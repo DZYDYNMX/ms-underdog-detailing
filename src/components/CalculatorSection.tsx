@@ -216,7 +216,7 @@ export const CalculatorSection: React.FC<CalculatorSectionProps> = ({ onEstimate
         </div>
       </div>
 
-      {/* Inline price display — only show in standalone mode */}
+      {/* Inline price display - only show in standalone mode */}
       {!inlineMode && (
         <>
           <div className="price-display-box" style={{ marginTop: '20px' }}>

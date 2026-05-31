@@ -101,7 +101,7 @@ export const GallerySection: React.FC = () => {
         ))}
       </motion.div>
 
-      {/* Swipe hint — only visible on mobile */}
+      {/* Swipe hint - only visible on mobile */}
       <motion.p
         variants={itemVariants}
         style={{ color: 'var(--text-muted)', fontSize: '11px', textAlign: 'center' }}

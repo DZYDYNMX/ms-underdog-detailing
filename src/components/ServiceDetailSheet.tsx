@@ -165,7 +165,7 @@ export const ServiceDetailSheet: React.FC<ServiceDetailSheetProps> = ({ serviceI
           justifyContent: 'center',
         }}
       >
-        {/* Sheet — stop click bubbling */}
+        {/* Sheet - stop click bubbling */}
         <motion.div
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
@@ -243,7 +243,7 @@ export const ServiceDetailSheet: React.FC<ServiceDetailSheetProps> = ({ serviceI
               ))}
             </div>
 
-            {/* Includes — two columns on wide sheets */}
+            {/* Includes - two columns on wide sheets */}
             <div style={{ display: 'grid', gridTemplateColumns: details.includesExterior && details.includesInterior ? '1fr 1fr' : '1fr', gap: '16px', marginBottom: '20px' }}>
               {details.includesExterior && (
                 <div>
