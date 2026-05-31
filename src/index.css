@@ -20,7 +20,7 @@
   --accent-gold-dark: var(--accent-red-dark);
 
   /* Layout */
-  --desktop-max-width: 640px;
+  --desktop-max-width: 1100px;
   --header-height: 68px;
   --nav-height: 70px;
 
@@ -358,6 +358,13 @@ h2 {
 
 /* Responsive grids */
 .responsive-grid-2 { display: grid; grid-template-columns: 1fr; gap: 20px; }
+
+@media (min-width: 768px) {
+  .responsive-grid-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
 .responsive-grid-3 { display: grid; grid-template-columns: 1fr; gap: 20px; }
 
 /* Star rating */
