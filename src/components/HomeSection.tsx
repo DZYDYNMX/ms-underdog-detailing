@@ -177,7 +177,7 @@ export const HomeSection: React.FC = () => {
           </motion.div>
 
           {/* Business Hours */}
-          <motion.div variants={itemVariants} className="service-card" style={{ maxWidth: '640px', width: '100%', margin: '0 auto' }}>
+          <motion.div variants={itemVariants} style={{ maxWidth: '640px', width: '100%', margin: '0 auto', padding: '0 16px' }}>
             <div style={{ marginBottom: '14px' }}>
               <h3 style={{ fontSize: '16px', color: 'var(--text-primary)', margin: 0 }}>Operational Hours</h3>
             </div>
