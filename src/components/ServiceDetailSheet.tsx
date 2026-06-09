@@ -66,8 +66,8 @@ export const ServiceDetailSheet: React.FC<ServiceDetailSheetProps> = ({ serviceI
       description: 'Focused entirely on your cabin. Deep sanitization, stain extraction, and full restoration of all fabric, leather, and plastic surfaces.',
       prices: [
         { category: 'Coupes & Sedans', price: '$160' },
-        { category: 'Midsize Trucks, SUVs & Vans', price: '$180' },
-        { category: 'Large Trucks', price: '$190' },
+        { category: 'Midsize Trucks & SUVs', price: '$180' },
+        { category: 'Large Trucks & Vans', price: '$190' },
         { category: 'Extra Large Trucks', price: '$220' }
       ],
       includesInterior: [

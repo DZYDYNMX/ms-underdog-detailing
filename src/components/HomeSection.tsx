@@ -137,7 +137,7 @@ export const HomeSection: React.FC = () => {
               <span style={{ color: 'var(--accent-red)', fontSize: '11px', fontWeight: 600, textTransform: 'uppercase' }}>Owner & Lead Technician</span>
             </div>
             <p style={{ color: 'var(--text-secondary)', fontSize: '12.5px', lineHeight: '1.6', margin: 0 }}>
-              "I started Ms.Underdog Mobile Detailing to bring authentic, high-end shop detailing quality directly to your driveway. We don't believe in rushed drive-thru washes. We take our time, steam sanitize your cabin, deep clean the carpets, and hand-wax your clear coat to protect your investment."
+              "As a proudly Black-owned and Woman-owned & operated business, I started Ms.Underdog Mobile Detailing to bring authentic, high-end shop detailing quality directly to your driveway. We don't believe in rushed drive-thru washes. We take our time, steam sanitize your cabin, deep clean the carpets, and hand-wax your clear coat to protect your investment."
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent-red)', fontSize: '11px', fontWeight: 700 }}>
               <Star size={12} fill="currentColor" />
@@ -146,6 +146,15 @@ export const HomeSection: React.FC = () => {
               <Star size={12} fill="currentColor" />
               <Star size={12} fill="currentColor" />
               <span>Over 8 Years Serving D.C. Area</span>
+            </div>
+            {/* Proudly Owned Badges */}
+            <div style={{ display: 'flex', gap: '8px', marginTop: '2px', flexWrap: 'wrap' }}>
+              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span style={{ fontSize: '13px' }}>✊🏽</span> Black-Owned Business
+              </span>
+              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span style={{ fontSize: '13px' }}>✨</span> Woman-Owned & Operated
+              </span>
             </div>
           </motion.div>
 
