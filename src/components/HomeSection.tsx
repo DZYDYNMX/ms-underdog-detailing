@@ -145,15 +145,18 @@ export const HomeSection: React.FC = () => {
               <Star size={12} fill="currentColor" />
               <Star size={12} fill="currentColor" />
               <Star size={12} fill="currentColor" />
-              <span>Over 8 Years Serving D.C. Area</span>
+              <span>10+ Years Serving D.C. Area</span>
             </div>
-            {/* Proudly Owned Badges */}
+            {/* Proudly Owned & Trust Badges */}
             <div style={{ display: 'flex', gap: '8px', marginTop: '2px', flexWrap: 'wrap' }}>
               <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span style={{ fontSize: '13px' }}>✊🏽</span> Black-Owned Business
               </span>
               <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span style={{ fontSize: '13px' }}>✨</span> Woman-Owned & Operated
+              </span>
+              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span style={{ fontSize: '13px' }}>🛡️</span> Licensed & Insured
               </span>
             </div>
           </motion.div>
