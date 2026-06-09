@@ -149,14 +149,14 @@ export const HomeSection: React.FC = () => {
             </div>
             {/* Proudly Owned & Trust Badges */}
             <div style={{ display: 'flex', gap: '8px', marginTop: '2px', flexWrap: 'wrap' }}>
-              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span style={{ fontSize: '13px' }}>✊🏽</span> Black-Owned Business
+              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600 }}>
+                Black-Owned Business
               </span>
-              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span style={{ fontSize: '13px' }}>✨</span> Woman-Owned & Operated
+              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600 }}>
+                Woman-Owned & Operated
               </span>
-              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span style={{ fontSize: '13px' }}>🛡️</span> Licensed & Insured
+              <span style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', padding: '5px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 600 }}>
+                Licensed
               </span>
             </div>
           </motion.div>
