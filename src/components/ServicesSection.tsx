@@ -90,7 +90,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           Upgrade any package with machine-applied orbital wax for a deep, mirror-like finish. Removes light swirl marks and adds a protective gloss coat that lasts months.
         </p>
         <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-          {[['Compact/Sedan', '$125'], ['Midsize', '$150'], ['Large SUV/Van', '$180+']].map(([label, price]) => (
+          {[['Coupe / Sedan', '$125'], ['Midsize SUV / Truck', '$150'], ['Large SUV (3-Row) / Van', '$180+'], ['Extra Large / Heavy Duty', '$200+']].map(([label, price]) => (
             <div key={label} style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
               <span style={{ color: 'var(--text-muted)', fontSize: '12px' }}>{label}</span>
               <span style={{ color: 'var(--text-primary)', fontWeight: 700, fontSize: '15px' }}>{price}</span>

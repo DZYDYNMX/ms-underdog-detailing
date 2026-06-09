@@ -47,9 +47,9 @@ export const CalculatorSection: React.FC<CalculatorSectionProps> = ({ onEstimate
   const pkgLabels = { full: 'Full Detail', interior: 'Interior Detail', express: 'Express Detail' };
   const sizeLabels = {
     sedan: 'Coupe / Sedan',
-    midsize: 'Midsize Truck/SUV',
-    large: 'Large Truck / 3-Row SUV',
-    xl: 'Extra Large Truck / Van / RV'
+    midsize: 'Midsize SUV / Truck',
+    large: 'Large SUV (3-Row) / Van',
+    xl: 'Extra Large / Heavy Duty'
   };
 
   // Recalculate price whenever inputs change
@@ -138,9 +138,9 @@ export const CalculatorSection: React.FC<CalculatorSectionProps> = ({ onEstimate
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
           {[
             { id: 'sedan', label: 'Coupe / Sedan' },
-            { id: 'midsize', label: 'Midsize SUV' },
-            { id: 'large', label: 'Large SUV (3-row)' },
-            { id: 'xl', label: 'Extra Large / Truck' }
+            { id: 'midsize', label: 'Midsize SUV / Truck' },
+            { id: 'large', label: 'Large SUV (3-Row) / Van' },
+            { id: 'xl', label: 'Extra Large / Heavy Duty' }
           ].map((size) => (
             <motion.button
               key={size.id}
