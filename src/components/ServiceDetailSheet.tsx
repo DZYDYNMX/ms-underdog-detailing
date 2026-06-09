@@ -26,10 +26,10 @@ export const ServiceDetailSheet: React.FC<ServiceDetailSheetProps> = ({ serviceI
       duration: '3–4 Hours',
       description: 'The complete reset. We touch every surface twice: steam-cleaned interior, hand-washed exterior, wax protection, and a fresh-car smell to match.',
       prices: [
-        { category: 'Coupe / Sedan', price: '$260' },
-        { category: 'Midsize SUV / Truck', price: '$280' },
-        { category: 'Large SUV (3-Row) / Van', price: '$300' },
-        { category: 'Extra Large / Heavy Duty', price: '$340' }
+        { category: 'Coupe / Sedan', price: '$260+' },
+        { category: 'Midsize SUV / Truck', price: '$280+' },
+        { category: 'Large SUV (3-Row) / Van', price: '$300+' },
+        { category: 'Extra Large / Heavy Duty', price: '$340+' }
       ],
       includesExterior: [
         'Bug & tar remover treatment',
@@ -65,10 +65,10 @@ export const ServiceDetailSheet: React.FC<ServiceDetailSheetProps> = ({ serviceI
       duration: '2–3 Hours',
       description: 'Focused entirely on your cabin. Deep sanitization, stain extraction, and full restoration of all fabric, leather, and plastic surfaces.',
       prices: [
-        { category: 'Coupe / Sedan', price: '$160' },
-        { category: 'Midsize SUV / Truck', price: '$180' },
-        { category: 'Large SUV (3-Row) / Van', price: '$190' },
-        { category: 'Extra Large / Heavy Duty', price: '$220' }
+        { category: 'Coupe / Sedan', price: '$160+' },
+        { category: 'Midsize SUV / Truck', price: '$180+' },
+        { category: 'Large SUV (3-Row) / Van', price: '$190+' },
+        { category: 'Extra Large / Heavy Duty', price: '$220+' }
       ],
       includesInterior: [
         'Dash, console, vents & glovebox detailed',
@@ -119,9 +119,9 @@ export const ServiceDetailSheet: React.FC<ServiceDetailSheetProps> = ({ serviceI
       duration: '1–1.25 Hours',
       description: 'A quick, consistent refresh to keep your vehicle looking great. Perfect for weekly, bi-weekly, or monthly upkeep.',
       prices: [
-        { category: 'Coupe / Sedan', price: 'From $100' },
+        { category: 'Coupe / Sedan', price: '$100+' },
         { category: 'Midsize SUV / Truck', price: '$125+' },
-        { category: 'Large SUV (3-Row) / Van', price: '$135' },
+        { category: 'Large SUV (3-Row) / Van', price: '$135+' },
         { category: 'Extra Large / Heavy Duty', price: '$230+' }
       ],
       includesExterior: [
