@@ -49,10 +49,18 @@ export const HomeSection: React.FC = () => {
             fontStyle: 'italic',
             color: 'rgba(255,255,255,0.9)',
             fontSize: '18px',
-            margin: '0 0 8px 0',
+            margin: '0 0 6px 0',
             fontWeight: 500
           }}>
             "A man's hard work with a woman's touch"
+          </p>
+          <p style={{
+            color: 'rgba(255,255,255,0.75)',
+            fontSize: '14px',
+            margin: '0 0 12px 0',
+            fontWeight: 400
+          }}>
+            We pay attention to the details that others fail to see.
           </p>
           <p style={{
             color: 'var(--accent-red)',
