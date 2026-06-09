@@ -40,36 +40,27 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     setIsSubmitting(true);
     setSavedName(name);
 
-    const web3FormsKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "";
-
     try {
-      if (web3FormsKey) {
-        const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-          },
-          body: JSON.stringify({
-            access_key: web3FormsKey,
-            subject: `New Detailing Request from ${name}`,
-            from_name: "Ms. Underdog Auto Detailing",
-            "Client Name": name,
-            "Client Phone": phone,
-            "Service Area": serviceArea || "Not provided",
-            "Vehicle Info": `${estimate.vehicleSize} ${vehicleMakeModel ? `(${vehicleMakeModel})` : ''}`,
-            "Selected Package": `${estimate.packageName} ($${estimate.totalPrice})`,
-            "Add-ons Selected": estimate.addOns.length > 0 ? estimate.addOns.join(', ') : 'None',
-            "Additional Notes": notes || "No additional notes"
-          })
-        });
+      const response = await fetch("https://eoezvkd1y88dulm.m.pipedream.net/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          subject: `New Detailing Request from ${name}`,
+          client_name: name,
+          client_phone: phone,
+          service_area: serviceArea || "Not provided",
+          vehicle_info: `${estimate.vehicleSize} ${vehicleMakeModel ? `(${vehicleMakeModel})` : ''}`,
+          selected_package: `${estimate.packageName} ($${estimate.totalPrice})`,
+          addons_selected: estimate.addOns.length > 0 ? estimate.addOns.join(', ') : 'None',
+          additional_notes: notes || "No additional notes"
+        })
+      });
 
-        if (!response.ok) {
-          throw new Error("Failed to send booking via Web3Forms");
-        }
-      } else {
-        console.warn("NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY is not defined in env variables. Emails will not send until configured.");
-        await new Promise(resolve => setTimeout(resolve, 1400));
+      if (!response.ok) {
+        throw new Error("Failed to send booking via webhook");
       }
 
       setIsSuccess(true);
